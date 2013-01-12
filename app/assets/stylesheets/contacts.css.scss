@@ -1,3 +1,80 @@
 // Place all the styles related to the Contacts controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+body{
+	padding:20px 40px;
+	
+	h1{
+		font-family: "Droid Serif";
+		font-weight: normal;
+	}
+	td,th{
+		font-family: "Droid Sans";
+	}
+	#contacts-table{
+		width:55%;
+	}
+	a:hover{
+		background-color: transparent;
+		i{
+			// background-image:url("/assets/glyphicons-halflings-white.png");
+		}
+	}
+	a.btn{
+		color:white !important;
+	}
+	tr:hover{
+		td{
+			background-color:#f5f5f5;
+			cursor: pointer;
+		}
+		
+	}
+
+	#contact-details{
+		position:fixed;
+		right:40px;
+		top:70px;
+		left:auto;
+		
+		width:200px;
+		.nvp{
+			margin-bottom:10px;
+		}
+		div{
+			padding:4px;
+			border-radius: 3px;
+
+		}
+		.name{
+			color:#333;
+			// line-height: 28px;
+			font-family: "Droid Serif";
+			
+		}.value{
+			background-color:#fbfafc;
+			width:auto;
+		}
+	}
+	.float-right{
+		float:right;
+		display: none;
+	}
+}
+
+.increase-height{
+	height:200px;
+	width:200px;
+	// border:1px solid red;
+}
+.responsive{
+	#contacts-table{
+		width:100% !important;
+	}
+	#contact-details{
+		top:auto;
+		bottom:-200px;
+		cursor: pointer;
+	}
+}

@@ -9,8 +9,10 @@ class AddressBook.Views.Contacts.IndexView extends Backbone.View
   addAll: () =>
     @options.contacts.each(@addOne)
 
+
   addOne: (contact) =>
     view = new AddressBook.Views.Contacts.ContactView({model : contact})
+    view.highlight();
     @$("tbody").append(view.render().el)
 
   render: =>
