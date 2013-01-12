@@ -1,0 +1,10 @@
+<div id = "contacts">
+</div>
+
+<script type="text/javascript">
+  $(function() {
+    
+    window.router = new AddressBook.Routers.ContactsRouter({contacts: <%= @contacts.to_json.html_safe -%>});
+    Backbone.history.start();
+  });
+</script>
